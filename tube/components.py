@@ -1,6 +1,4 @@
-"""
-WARNING: the following classes should remain unchanged!
-"""
+
 
 class Station:
     def __init__(self, id, name, zones):

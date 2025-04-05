@@ -2,10 +2,7 @@ from network.graph import NeighbourGraphBuilder
 
 class PathFinder:
     """
-    Task 3: Complete the definition of the PathFinder class by:
-    - completing the definition of the __init__() method (if needed)
-    - completing the "get_shortest_path()" method (don't hesitate to divide 
-      your code into several sub-methods)
+    Class to find the shortest path between two stations in a TubeMap.
     """
 
     def __init__(self, tubemap):
@@ -193,7 +190,7 @@ def test_shortest_path():
     """
     from tube.map import TubeMap
     tubemap = TubeMap()
-    tubemap.import_from_json("../data/london.json")
+    tubemap.import_from_json("./data/london.json")
     path_finder = PathFinder(tubemap)
     stations = path_finder.get_shortest_path("Covent Garden", "Green Park")
     print(stations)

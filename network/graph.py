@@ -1,9 +1,5 @@
 class NeighbourGraphBuilder:
-    """
-    Task 2: Complete the definition of the NeighbourGraphBuilder class by:
-    - completing the "build" method below (don't hesitate to divide your code 
-      into several sub-methods, if needed)
-    """
+    """ Class to build a graph of neighbouring connections between stations."""
 
     def __init__(self):
         pass
@@ -123,7 +119,7 @@ class NeighbourGraphBuilder:
 def test_graph():
     from tube.map import TubeMap
     tubemap = TubeMap()
-    tubemap.import_from_json("../data/london.json")
+    tubemap.import_from_json("./data/london.json")
     graph_builder = NeighbourGraphBuilder()
     graph = graph_builder.build(tubemap)
     print(graph)

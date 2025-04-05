@@ -1,4 +1,4 @@
-# COMP70053 - Python Programming - CW2 - Tube Map
+# COMP70053 - Python Programming - Tube Map
 
 ## Project Structure
 

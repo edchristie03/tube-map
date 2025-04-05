@@ -135,7 +135,7 @@ def test_import():
 
     # Only run test if input file is correct. If there is error, import_from_json will return 1
 
-    if tubemap.import_from_json("../data/london.json") != 1:
+    if tubemap.import_from_json("./data/london.json") != 1:
     
         # view one example Station
         print(tubemap.stations[list(tubemap.stations)[0]])
